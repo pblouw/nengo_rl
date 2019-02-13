@@ -533,9 +533,7 @@ class EnvironmentInterface(object):
             action_idx = np.random.choice(np.arange(4))    
         
         x_pos, y_pos = self.compute_position(action_idx)
-        print('TYPE')
         self.agent.set_position(x_pos, y_pos)
-        print('TEST')
 
         return action_idx
 
@@ -565,9 +563,7 @@ class EnvironmentInterface(object):
             
             qs = self.output[8:]
             idx = np.argmax(qs)
-            print('TEST')
             self.current_action_index = self.take_action(idx)
-            print('PASSED')
 
         # then on next step store new qvalues
         elif int(t * 1000) % self.stepsize == 1:
