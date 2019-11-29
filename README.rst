@@ -9,5 +9,5 @@ do the following from within this repository once you've cloned it:
     conda activate yourenv
     jupyter notebook
 
-You may need to install [Anaconda](https://docs.anaconda.com/anaconda/install/)
+You may need to install `Anaconda <https://docs.anaconda.com/anaconda/install/>`_
 beforehand.
